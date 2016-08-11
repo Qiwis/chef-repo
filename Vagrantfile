@@ -5,8 +5,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_client do |chef|
     chef.provisioning_path = "/etc/chef"
-    chef.chef_server_url = "http://api.opscode.come/organizations/chef-pract"
-    chef.validation_key_path = "/.chef/chef-pract-validator.pem"
+    chef.chef_server_url = "https://api.opscode.com/organizations/chef-pract"
+    chef.validation_key_path = ".chef/chef-pract-validator.pem"
     chef.validation_client_name = "chef-pract-validator"
     chef.node_name = "server"
   end

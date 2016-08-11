@@ -6,8 +6,11 @@ log_location             STDOUT
 node_name                "qiwis"
 client_key               "#{current_dir}/qiwis.pem"
 validation_client_name   "chef-pract-validator"
-validation_key           "#{current_dir}/chef-pract-validator"
+validation_key           "#{current_dir}/chef-pract-validator.pem"
 chef_server_url          "https://api.chef.io/organizations/chef-pract"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
+cookbook_copyright       "chef-pract"
+cookbook_license         "apachev2"
+cookbook_email           "doanquoc93@gmail.com"
